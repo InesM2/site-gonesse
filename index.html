@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil – UNSPG</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;&display=swap"rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<!-- Menu burger -->
+<div class="burger" onclick="toggleMenu()">☰</div>
+
+<!-- Menu latéral -->
+<div class="side-menu" id="sideMenu">
+<ul>
+<li><a href="#">Mentions légales</a></li>
+<li><a href="#">Politique de confidentialité</a></li>
+<li><a href="#">CGU</a></li>
+<li><a href="pages/informations.html">Informations légales</a></li>
+</ul>
+</div>
+
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<!-- Navigation principale -->
+<header>
+<div class="logo">
+<a href="index.html">UNSPG</a>
+</div>
+<nav>
+<ul class="nav-links">
+<li><a href="pages/equipe.html">L’équipe</a></li>
+<li><a href="pages/actualite.html">Actualité</a></li>
+<li><a href="pages/projets.html">Projets</a></li>
+<li><a href="pages/documents.html">Documents</a></li>
+<li><a href="pages/soutien.html">Comité de soutien</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero-banner">
+    <div class="hero-overlay">
+        <div class="hero-text">
+            <h1>Cédric Sabouret</h1>
+            <h2>Conseiller départemental<br>pour le Val-d'oise</h2>
+        </div>
+    </div>
+</section>
+
+<section class="highlight-bar">
+    <div class="reseaux-sociaux">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="x.jpg" alt="X">
+        </a>
+         <a href="https://www.youtube.com" target="_blank">
+            <img src="youtube.jpg" alt="YouTube">
+        </a>
+         <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.jpg" alt="Facebook">
+        </a>
+    </div>
+</section>
+
+<section class="intro-zone">
+<h2>Pourquoi ce site ?</h2>
+<p>Ce site vous permet de suivre l’engagement de Cédric Sabouret et de son équipe, leurs actions pour Gonesse, et de découvrir les projets à venir.</p>
+</section>
+
+<section class="slider-zone">
+<div class="slider-left">
+<div class="slider" id="main-slider">
+<!-- Slide 1 -->
+<div class="slide active">
+<img src="images/cedric1.jpg" alt="Inauguration de l’hôpital">
+<div class="caption">
+<h2>Inauguration de l’hôpital</h2>
+<a href="pages/projets.html" class="button">Voir l’article</a>
+</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide">
+<img src="images/cedric3.jpg" alt="Réunion avec les jeunes">
+<div class="caption">
+<h2>Réunion avec les jeunes</h2>
+<a href="pages/projets.html" class="button">Voir l’article</a>
+</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide">
+<img src="images/cedric2.jpg" alt="Rencontre avec les jeunes">
+<div class="caption">
+<h2>Rencontre avec les jeunes</h2>
+<a href="pages/projets.html" class="button">Voir l’article</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="slider-right">
+<!-- vide pour l’instant -->
+</div>
+</section>
+
+
+<!-- 4 blocs d’actu -->
+<section class="actus">
+<div class="actu-card">
+<img src="images/cedric12.jpg" alt="Actu 1">
+<p>Signature du contrat local de santé avec les acteurs du territoire.</p>
+<a href="pages/actualite.html">Voir l'actu</a>
+</div>
+<div class="actu-card">
+<img src="images/cedric7.jpg" alt="Actu 2">
+<p>Rencontre citoyenne avec les habitants du quartier Ampère.</p>
+<a href="pages/actualite.html">Voir l'actu</a>
+</div>
+<div class="actu-card">
+<img src="images/cedric8.jpg" alt="Actu 3">
+<p>Conférence sur les enjeux écologiques à Gonesse.</p>
+<a href="pages/actualite.html">Voir l'actu</a>
+</div>
+<div class="actu-card">
+<img src="images/cedric9" alt="Actu 4">
+<p>Lancement du projet Station G avec la participation des jeunes.</p>
+<a href="pages/actualite.html">Voir l'actu</a>
+</div>
+</section>
+<section class="double-texte">
+<div class="bloc-texte gauche">
+<h3>Gonesse, une ville en mouvement</h3>
+<p>Depuis plusieurs années, Gonesse connaît de profondes transformations. Grâce à une politique de proximité et des projets structurants, la ville avance vers un avenir plus durable, plus juste et plus humain. Ce travail collectif ne fait que commencer.</p>
+</div>
+
+<div class="bloc-texte droite">
+<h3>Une ambition partagée</h3>
+<p>Les défis sont nombreux, mais notre énergie l’est tout autant. Avec les habitantes et habitants, nous construisons une ville solidaire et ambitieuse, à l’écoute des besoins de chacun et prête à relever les enjeux du XXIe siècle avec cohérence et transparence.</p>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+<p>© 2025 Un Nouveau Souffle pour Gonesse – Tous droits réservés</p>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</main>
+</html>
