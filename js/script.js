@@ -57,4 +57,3 @@ closeBtn.addEventListener("click", function () {
 popup.style.display = "none";
 });
 }
-});

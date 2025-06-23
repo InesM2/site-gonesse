@@ -16,6 +16,23 @@
 <!-- Menu latéral -->
 <div class="side-menu" id="sideMenu">
 <ul>
+<li><a href="pages/equipe.html">Biographie</a></li>
+<li><a href="pages/actualite.html">Actualités</a></li>
+<li><a href="pages/projets.html">Projets</a></li>
+<li><a href="pages/documents.html">La station G</a></li>
+<li><a href="pages/soutien.html">Comité de soutien</a></li>
+</ul>
+</div>
+
+<!-- Fond flouté -->
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<!-- Menu burger -->
+<div class="burger" onclick="toggleMenu()">☰</div>
+
+<!-- Menu latéral -->
+<div class="side-menu" id="sideMenu">
+<ul>
 <li><a href="#">Mentions légales</a></li>
 <li><a href="#">Politique de confidentialité</a></li>
 <li><a href="#">CGU</a></li>
@@ -167,7 +184,7 @@
 
 <!-- Slide 3 -->
 <div class="slide">
-<img src="images/cedric2.jpg" alt="Rencontre avec les jeunes">
+<img src="images/cedric12_HD.jpg" alt="Rencontre avec les jeunes">
 <div class="caption">
 <h2>Rencontre avec les jeunes</h2>
 <a href="pages/projets.html" class="button">Voir l’article</a>
@@ -183,28 +200,49 @@
 
 
 <!-- 4 blocs d’actu -->
-<section class="actus">
-<div class="actu-card">
-<img src="images/travaux.jpg" alt="Actu 1">
-<p>Trop de travaux </p>
-<a href="pages/travaux.jpg">Voir l'actu</a>
+<section class="actualites-section">
+<div class="actualites-titre">
+<h2>Nos actualités</h2>
+<a href="pages/actualite.html" class="voir-toutes">Voir toutes nos actualités</a>
 </div>
-<div class="actu-card">
-<img src="images/legonessien.jpg" alt="Actu 2">
-<p>Le Gonessien, organe d’information ou de propagande municipale ?</p>
+
+<div class="actualite-principale">
+<img src="images/cedric1.jpg" alt="Inauguration de l’hôpital">
+<div class="actu-texte">
+<h3>Inauguration de l’hôpital</h3>
+<p>Un nouveau centre de santé pour tous a été inauguré à Gonesse.</p>
 <a href="pages/actualite.html">Voir l'actu</a>
 </div>
-<div class="actu-card">
-<img src="images/zonebleu.jpg" alt="Actu 3">
-<p>Stationnement résidentiel, donnez votre avis</p>
+</div>
+
+<div class="actualites-secondaires">
+<div class="actu-secondaire">
+<img src="images/travaux.jpg" alt="Travaux à Gonesse">
+<div class="actu-texte">
+<h4>Trop de travaux</h4>
+<p>Les habitants s’interrogent sur la coordination des chantiers.</p>
 <a href="pages/actualite.html">Voir l'actu</a>
 </div>
-<div class="actu-card">
-<img src="images/cedric9" alt="Actu 4">
-<p>Lancement du projet Station G.</p>
+</div>
+<div class="actu-secondaire">
+<img src="images/legonessien.jpg" alt="Le Gonessien">
+<div class="actu-texte">
+<h4>Le Gonessien, outil d’information ou de communication ?</h4>
+<p>Focus sur la ligne éditoriale du journal municipal.</p>
 <a href="pages/actualite.html">Voir l'actu</a>
+</div>
+</div>
+<div class="actu-secondaire">
+<img src="images/zonebleu.jpg" alt="Zone Bleue à Gonesse">
+<div class="actu-texte">
+<h4>Zone Bleue à Gonesse</h4>
+<p>Donnez votre avis sur les nouvelles zones de stationnement.</p>
+<a href="pages/actualite.html">Voir l'actu</a>
+</div>
+</div>
 </div>
 </section>
+
 <section class="double-texte">
 <div class="bloc-texte gauche">
 <h3>Gonesse, une ville en mouvement</h3>

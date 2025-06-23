@@ -1,33 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>L’équipe – UNSPG</title>
-<link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Actualités – UNSPG</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css" />
+<style>
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background: linear-gradient(to bottom, #1f3c88, #2e69a3);
+color: white;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #2c3e50;
+padding: 20px 40px;
+}
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+list-style: none;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+font-size: 18px;
+}
+.actus-container {
+max-width: 1200px;
+margin: 40px auto;
+padding: 20px;
+}
+.actus-title {
+text-align: center;
+font-size: 32px;
+margin-bottom: 40px;
+}
+.actu-block {
+display: flex;
+background-color: rgba(255, 255, 255, 0.08);
+margin-bottom: 40px;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.actu-block:nth-child(even) {
+flex-direction: row-reverse;
+}
+.actu-image {
+flex: 1;
+min-width: 250px;
+max-height: 220px;
+}
+.actu-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.actu-text {
+flex: 2;
+padding: 20px;
+}
+.actu-text h3 {
+margin-top: 0;
+font-size: 22px;
+}
+.actu-text p {
+font-size: 16px;
+line-height: 1.6;
+}
+</style>
 </head>
 <body>
+
 <header>
-    <div class="logo">
-    <a href="../index.html">UNSPG</a>
-    </div>
+<div class="logo">UNSPG</div>
 <nav>
-<ul>
-<li><a href="equipe.html">L’équipe</a></li>
-<li><a href="actualite.html">Actualité</a></li>
+<ul class="nav-links">
+<li><a href="../index.html">Accueil</a></li>
+<li><a href="equipe.html">Biographie</a></li>
+<li><a href="actualite.html">Actualités</a></li>
 <li><a href="projets.html">Projets</a></li>
-<li><a href="documents.html">Documents</a></li>
+<li><a href="documents.html">La Station G</a></li>
 <li><a href="soutien.html">Comité de soutien</a></li>
 </ul>
 </nav>
 </header>
 
-<main>
-<h1>L’équipe</h1>
-<p>Page en construction.</p>
-</main>
+<section class="actus-container">
+<h2 class="actus-title">Nos actualités</h2>
 
-<footer>
-<p>© 2025 Un Nouveau Souffle pour Gonesse – Tous droits réservés</p>
-</footer>
+<div class="actu-block">
+<div class="actu-image">
+<img src="../images/actu1.jpg" alt="Actu 1" /> <!-- # modifie ici -->
+</div>
+<div class="actu-text">
+<h3>Inauguration de l’Hôpital</h3>
+<p>Un nouveau centre de santé moderne a été inauguré à Gonesse, offrant plus de services de proximité aux habitants.</p>
+</div>
+</div>
+
+<div class="actu-block">
+<div class="actu-image">
+<img src="../images/actu2.jpg" alt="Actu 2" /> <!-- # modifie ici -->
+</div>
+<div class="actu-text">
+<h3>Zone Bleue à Gonesse</h3>
+<p>Participez à la consultation citoyenne sur la zone bleue pour mieux adapter le stationnement aux besoins locaux.</p>
+</div>
+</div>
+
+<div class="actu-block">
+<div class="actu-image">
+<img src="../images/actu3.jpg" alt="Actu 3" /> <!-- # modifie ici -->
+</div>
+<div class="actu-text">
+<h3>Rencontre avec les jeunes</h3>
+<p>Une table ronde organisée pour dialoguer avec les jeunes sur leur avenir, leurs attentes et leurs idées.</p>
+</div>
+</div>
+
+<div class="actu-block">
+<div class="actu-image">
+<img src="../images/actu4.jpg" alt="Actu 4" /> <!-- # modifie ici -->
+</div>
+<div class="actu-text">
+<h3>Lancement de la Station G</h3>
+<p>Le projet de tiers-lieu Station G est officiellement lancé, avec des espaces partagés pour tous les Gonessiens.</p>
+</div>
+</div>
+
+</section>
+
 </body>
 </html>

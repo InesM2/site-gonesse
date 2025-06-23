@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Biographie – UNSPG</title>
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+color: #fff;
+background: linear-gradient(135deg, #1f355c, #3c6ea5);
+background-attachment: fixed;
+background-size: cover;
+}
+
+.bio-section {
+min-height: 100vh;
+padding: 80px 20px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+
+.bio-container {
+background-color: rgba(0, 0, 50, 0.7);
+border-radius: 16px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+max-width: 1000px;
+padding: 40px;
+display: flex;
+gap: 40px;
+flex-wrap: wrap;
+}
+
+.bio-text {
+flex: 2;
+min-width: 300px;
+}
+
+.bio-text h1 {
+font-size: 36px;
+margin-bottom: 20px;
+border-bottom: 2px solid #9ecfff;
+padding-bottom: 10px;
+}
+
+.bio-text p {
+font-size: 18px;
+line-height: 1.8;
+margin-bottom: 18px;
+}
+
+.bio-images {
+flex: 1;
+min-width: 220px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.bio-images img {
+width: 100%;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+.bio-container {
+flex-direction: column;
+padding: 20px;
+}
+}
+
+header, nav, footer {
+background-color: #1f355c;
+padding: 15px 30px;
+color: white;
+}
+
+nav ul {
+display: flex;
+gap: 20px;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+nav a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+footer {
+text-align: center;
+font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+    <!-- Menu burger -->
+<div class="burger" onclick="toggleMenu()">☰</div>
+
+<!-- Menu latéral -->
+<div class="side-menu" id="sideMenu">
+<ul>
+<li><a href="#">Mentions légales</a></li>
+<li><a href="#">Politique de confidentialité</a></li>
+<li><a href="#">CGU</a></li>
+<li><a href="pages/informations.html">Informations légales</a></li>
+</ul>
+</div>
+
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<header>
+<div class="logo">
+<a href="../index.html" style="color:white; text-decoration:none; font-weight: bold;">UNSPG</a>
+</div>
+<nav>
+<ul>
+<li><a href="biographie.html">L’équipe</a></li>
+<li><a href="actualite.html">Actualités</a></li>
+<li><a href="projets.html">Projets</a></li>
+<li><a href="documents.html">La station G</a></li>
+<li><a href="soutien.html">Comité de soutien</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="bio-section">
+<div class="bio-container">
+<div class="bio-text">
+<h1>Biographie de Cédric Sabouret</h1>
+<p>Candidat à la mairie de Gonesse en 2020, Cédric Sabouret avait alors manqué l’élection de
+seulement 42 voix au 2 ème tour. Conseiller municipal de Gonesse depuis 2008, il a désormais
+une grande expérience et une grande expertise des dossiers de la commune. Il est le leader
+de l’opposition municipale depuis les élections municipales de 2020.
+Il s’est rattrapé en 2021 en étant réélu conseiller départemental du Val d’Oise pour le canton
+de Villiers-le-Bel-Gonesse, obtenant 58 % des voix à Gonesse. Il siège au département
+depuis 2011, où il co-préside le groupe de gauche (opposition).
+Après avoir été directeur adjoint d’hôpital, il est devenu fonctionnaire dans une grande
+institution nationale.
+Installé à Gonesse depuis 23 ans, il a annoncé être de nouveau candidat aux prochaines
+élections municipales de 2026.
+</p>
+</div>
+<div class="bio-images">
+<img src="../images/cedric2.jpg" alt="Cédric Sabouret">
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2025 Un Nouveau Souffle pour Gonesse – Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
