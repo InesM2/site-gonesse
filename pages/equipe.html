@@ -2,13 +2,16 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body class="equipe-page">
 <title>Biographie – UNSPG</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;&display=swap"rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
+
 body {
 margin: 0;
-font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;
 color: #fff;
 background: linear-gradient(135deg, #1f355c, #3c6ea5);
 background-attachment: fixed;
@@ -91,7 +94,7 @@ margin: 0;
 nav a {
 text-decoration: none;
 color: white;
-font-weight: bold;
+font-weight: 500;
 }
 
 footer {
@@ -102,34 +105,35 @@ font-size: 14px;
 </head>
 <body>
 
-    <!-- Menu burger -->
-<div class="burger" onclick="toggleMenu()">☰</div>
-
 <!-- Menu latéral -->
 <div class="side-menu" id="sideMenu">
 <ul>
-<li><a href="#">Mentions légales</a></li>
-<li><a href="#">Politique de confidentialité</a></li>
-<li><a href="#">CGU</a></li>
-<li><a href="pages/informations.html">Informations légales</a></li>
+<li><a href="informations.html">Mentions légales</a></li>
+<li><a href="informations.html">Politique de confidentialité</a></li>
+<li><a href="informations.html">CGU</a></li>
+<li><a href="informations.html">Informations légales</a></li>
 </ul>
 </div>
 
-<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="overlay" id="overlay"></div>
 
+<!-- BANNIÈRE COMMUNE -->
 <header>
 <div class="logo">
-<a href="../index.html" style="color:white; text-decoration:none; font-weight: bold;">UNSPG</a>
+<a href="../index.html">
+<img src="../images/logo.jpg" alt="Logo UNSPG"/>
+</a>
 </div>
-<nav>
-<ul>
-<li><a href="biographie.html">L’équipe</a></li>
+<ul class="nav-links">
+<li><a href="equipe.html">Biographie</a></li>
 <li><a href="actualite.html">Actualités</a></li>
 <li><a href="projets.html">Projets</a></li>
-<li><a href="documents.html">La station G</a></li>
+<li><a href="Station G.html">La station G</a></li>
+<li><a href="nos-elues.html">Nos élues</a></li>
 <li><a href="soutien.html">Comité de soutien</a></li>
 </ul>
 </nav>
+<div class="burger" onclick="toggleMenu()">☰</div>
 </header>
 
 <section class="bio-section">
@@ -159,5 +163,6 @@ Installé à Gonesse depuis 23 ans, il a annoncé être de nouveau candidat aux 
 <p>© 2025 Un Nouveau Souffle pour Gonesse – Tous droits réservés</p>
 </footer>
 
+<script src="../js/script.js"></script>
 </body>
 </html>

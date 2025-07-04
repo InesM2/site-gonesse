@@ -2,144 +2,153 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Actualités – UNSPG</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css" />
-<style>
-body {
-margin: 0;
-font-family: 'Inter', sans-serif;
-background: linear-gradient(to bottom, #1f3c88, #2e69a3);
-color: white;
-}
-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #2c3e50;
-padding: 20px 40px;
-}
-.logo {
-font-size: 24px;
-font-weight: bold;
-}
-.nav-links {
-display: flex;
-gap: 20px;
-list-style: none;
-}
-.nav-links a {
-color: white;
-text-decoration: none;
-font-weight: 500;
-font-size: 18px;
-}
-.actus-container {
-max-width: 1200px;
-margin: 40px auto;
-padding: 20px;
-}
-.actus-title {
-text-align: center;
-font-size: 32px;
-margin-bottom: 40px;
-}
-.actu-block {
-display: flex;
-background-color: rgba(255, 255, 255, 0.08);
-margin-bottom: 40px;
-border-radius: 12px;
-overflow: hidden;
-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-.actu-block:nth-child(even) {
-flex-direction: row-reverse;
-}
-.actu-image {
-flex: 1;
-min-width: 250px;
-max-height: 220px;
-}
-.actu-image img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-.actu-text {
-flex: 2;
-padding: 20px;
-}
-.actu-text h3 {
-margin-top: 0;
-font-size: 22px;
-}
-.actu-text p {
-font-size: 16px;
-line-height: 1.6;
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<body>
+
+<body class="actualite">
+
+<!-- Menu latéral identique à index -->
+<div class="side-menu" id="sideMenu">
+<ul>
+<li><a href="informations.html#mentions">Mentions légales</a></li>
+<li><a href="informations.html#confidentialite">Politique de confidentialité</a></li>
+<li><a href="informations.html#cgu">CGU</a></li>
+<li><a href="informations.html#cookies">Cookies</a></li>
+</ul>
+</div>
 
 <header>
-<div class="logo">UNSPG</div>
-<nav>
+<div class="logo">
+<a href="../index.html"><img src="../images/logo.jpg" alt="Logo UNSPG" /></a>
+</div>
 <ul class="nav-links">
-<li><a href="../index.html">Accueil</a></li>
 <li><a href="equipe.html">Biographie</a></li>
 <li><a href="actualite.html">Actualités</a></li>
 <li><a href="projets.html">Projets</a></li>
-<li><a href="documents.html">La Station G</a></li>
+<li><a href="Station G.html">La station G</a></li>
+<li><a href="nos-elues.html">Nos élues</a></li>
 <li><a href="soutien.html">Comité de soutien</a></li>
 </ul>
-</nav>
+<div class="burger" onclick="toggleMenu()">☰</div>
 </header>
 
-<section class="actus-container">
-<h2 class="actus-title">Nos actualités</h2>
 
-<div class="actu-block">
-<div class="actu-image">
-<img src="../images/actu1.jpg" alt="Actu 1" /> <!-- # modifie ici -->
-</div>
-<div class="actu-text">
-<h3>Inauguration de l’Hôpital</h3>
-<p>Un nouveau centre de santé moderne a été inauguré à Gonesse, offrant plus de services de proximité aux habitants.</p>
-</div>
-</div>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
-<div class="actu-block">
-<div class="actu-image">
-<img src="../images/actu2.jpg" alt="Actu 2" /> <!-- # modifie ici -->
-</div>
-<div class="actu-text">
-<h3>Zone Bleue à Gonesse</h3>
-<p>Participez à la consultation citoyenne sur la zone bleue pour mieux adapter le stationnement aux besoins locaux.</p>
-</div>
-</div>
+<main class="actu-section">
 
-<div class="actu-block">
-<div class="actu-image">
-<img src="../images/actu3.jpg" alt="Actu 3" /> <!-- # modifie ici -->
-</div>
-<div class="actu-text">
-<h3>Rencontre avec les jeunes</h3>
-<p>Une table ronde organisée pour dialoguer avec les jeunes sur leur avenir, leurs attentes et leurs idées.</p>
-</div>
+<div class="actu1">
+<img src="../images/travaux.jpg" alt="Actu 1" class="img-actu1">
+<div class="zone-texte-actu1">
+<h3>Trop de travaux</h3><br>
+<p>Depuis quelques mois, vous constatez comme nous que de nombreux chantiers sont lancés
+dans Gonesse.<br>
+<br>Naturellement, il faut faire des travaux pour embellir la ville ou simplement faire la
+maintenance de certains équipements. Les désagréments (stationnement, poussière) sont
+un mal nécessaire.<br>
+<br>Malheureusement, nous constatons que ces travaux sont parfois lancés sans informer
+suffisamment à l’avance les riverains. Avenue des Bleuets (quartier des Marronniers), une
+fois les travaux finis, les trottoirs ne sont toujours pas refaits et la chaussée est dans un triste
+état.<br>
+<br>Il y a un manque de coordination et de suivi.
+Et on peut s’interroger sur la pertinence de certaines opérations. Dans le centre-ville, la
+commune va dépenser 500 000 € pour refaire le parking de la place du Général De Gaulle. 4
+mois de travaux mais pas une place supplémentaire créée (alors qu’on en manque).<br> On
+garde 2 voies de circulation alors qu’une seule aurait été suffisante.
+Et en refaisant le parking, on rate l’occasion de faire de la place devant la mairie une vraie
+place de village, attractive et donnant envie de se balader.<br>
+<br>Dommage !</p>
 </div>
 
-<div class="actu-block">
-<div class="actu-image">
-<img src="../images/actu4.jpg" alt="Actu 4" /> <!-- # modifie ici -->
+<div class="actu2">
+<img src="../images/legonessien.jpg" alt="Actu 2"class="img-actu2">
+<div class="texte-sous-actu2">
+<div class="zone-texte-actu2">
+<h3>Le Gonessien, organe d’information ou de propagande municipale ?</h3><br>
+<p class="texte-long"><br>Le magazine municipal, pour une ville, devrait être un trait d'union entre la municipalité et ses
+habitants, un vecteur d'information neutre et objectif sur la vie locale, les projets en cours, et
+les événements à venir.<br> À Gonesse, le magazine Le Gonessien est censé remplir cette
+mission.<br><br> Cependant, à une lecture plus attentive, on est en droit de se demander si cet
+organe de communication ne se mue pas trop souvent en un véritable outil de propagande
+au service de la majorité municipale en place.<br>
+<br>Une information unilatérale :<br>
+<br>Les articles, les interviews, les reportages, tout semble converger vers une glorification des
+actions et des initiatives de l'équipe municipale.<br> Les réalisations sont mises en avant avec
+force superlatifs, les chiffres sont souvent présentés sous leur jour le plus favorable, et les
+difficultés ou les controverses sont, quant à elles, largement minimisées, voire purement et
+simplement passées sous silence. Les débats du Conseil municipal sont complètement mis
+sous le tapis.<br>
+Où sont les voix discordantes ?<br> Où sont les critiques constructives ? <br>La contradiction,
+pourtant inhérente à la démocratie locale, semble avoir peu de place dans les colonnes du
+magazine.<br> Les rares fois où l'opposition est mentionnée, c'est souvent de manière succincte
+et sans réel droit de réponse, ou pire, pour discréditer ses positions.<br>
+Nous disposons simplement d’une libre tribune, écrite en tout petit, en fin de magazine.<br>
+Un culte de la personnalité à peine masqué<br>
+<br>Photos, citations et même interview du maire sur 2 pages dans le dernier numéro,<br> le
+Gonessien est devenu un album de communication personnelle plutôt qu'un bulletin
+d'information collective.<br><br> Cette personnification excessive du pouvoir local contribue à
+gommer la distinction entre la fonction et l'individu, et à renforcer l'idée que le magazine est
+un prolongement de la communication politique personnelle des élus.<br>
+<br>Des sujets soigneusement sélectionnés<br>
+Les thématiques abordées dans Le Gonessien sont également révélatrices.<br> Si les sujets liés
+aux festivités, aux associations et aux services municipaux sont bien évidemment présents –<br>
+et c'est tout à fait légitime – d'autres sujets d'importance pour la vie des Gonessiens sont
+traités avec une grande prudence, voire évités.<br><br> Les débats sensibles, les points de friction
+avec la population, les éventuels échecs ou retards de projets (piscine, fermée depuis 4 ans)
+sont rarement mis en lumière.<br>
+<br>Une communication qui coûte cher<br>
+Tout ceci se fait avec l’argent des Gonessiens.<br> La production d'un magazine municipal a un
+coût, et si ce coût est justifiable pour informer les citoyens, il l'est beaucoup moins s'il sert
+avant tout à des fins de propagande politique.<br> Les Gonessiens sont en droit d'attendre que
+leurs impôts soient utilisés pour une information équilibrée et utile, et non pour un outil de
+légitimation du pouvoir municipal en place.<br>
+<br>Nous demandons une information plus objective, pas un bulletin de propagande payé par le
+contribuable</p>
 </div>
-<div class="actu-text">
-<h3>Lancement de la Station G</h3>
-<p>Le projet de tiers-lieu Station G est officiellement lancé, avec des espaces partagés pour tous les Gonessiens.</p>
+
+</div>
+<div class="actu3">
+<img src="../images/zonebleu.jpg" alt="Actu 3"class="img-actu3">
+<div class="zone-texte-actu3">
+<h3>Stationnement résidentiel, donnez votre avis</h3><br>
+<p>Le maire de Gonesse a décidé de passer toute la ville d’ici l’été 2025 à un nouveau système
+de stationnement, en commençant par 2 quartiers : La Fauconnière et Les Marronniers.<br>
+<br>Concrètement, les règles de la zone bleue s’appliqueront partout : limitation du
+stationnement à 1h30 avec disque bleu obligatoire partout du lundi au samedi, de 9h à 19h,
+sans coupure à la mi-journée.<br>
+Exception faite pour les résidents de Gonesse, qui ont droit de stationner toute la journée
+sans disque uniquement sur leur voie d’habitation, en apposant un macaron « résident »,
+avec une limitation à 2 macarons par famille pour leur voiture personnelle.<br>
+<br>Les élus du groupe d’opposition municipale ont de gros doutes sur l’efficacité d’une telle
+mesure, sachant que les difficultés de stationnement dans les rues résidentielles sont plutôt
+le soir et le week-end et pas vraiment en journée de semaine. Très peu de contrôles sont
+effectués jusqu’à présent.<br>
+<br>Nous nous interrogeons aussi sur les modalités proposées : quelles solutions pour les
+familles avec plus de 2 adultes ayant une voiture ? pour les Gonessiens qui circulent avec
+une voiture de société ? pour les visiteurs familiaux (par exemple une grand-mère venant
+garder les enfants le mercredi) ? Et pourquoi mettre cette mesure en place dans des
+secteurs où il n’existe pas de problèmes de stationnement ?<br>
+<br>Cette mesure a été décidée sans être soumise au vote d’approbation du Conseil municipal,
+et sans que ne soit rendu public le bilan de la courte expérimentation menée dans certaines
+rues en novembre et décembre 2024.<br>
+Nous sommes conscients que le stationnement est un problème dans une bonne partie de la
+ville, mais nous pensons qu’une large concertation doit avoir lieu avant de généraliser le
+stationnement résidentiel. Peut-être que d'autres mesures seraient plus pertinentes (plus de
+retrait des voitures-ventouses etc...).<br>
+<br>C’est pourquoi, notre équipe d’opposition municipale à Gonesse a décidé de vous demander
+votre avis, afin de faire remonter vos observations :
+https://docs.google.com/forms/d/e/1FAIpQLSf2NWX0PGX6XNj9Yw8QYoYM121AI_GDfxtJb
+wQMaS_vAc7Dig/viewform?usp=header</p>
 </div>
 </div>
 
 </section>
-
+<footer>
+<p>© 2025 Un Nouveau Souffle pour Gonesse – Tous droits réservés</p>
+</footer>
+<script src="../js/script.js"></script>
 </body>
 </html>

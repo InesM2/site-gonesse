@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body class="index-page">
 <title>Accueil – UNSPG</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;&display=swap"rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -10,53 +11,37 @@
 <body>
 <main>
 
-<!-- Menu burger -->
-<div class="burger" onclick="toggleMenu()">☰</div>
 
 <!-- Menu latéral -->
 <div class="side-menu" id="sideMenu">
 <ul>
-<li><a href="pages/equipe.html">Biographie</a></li>
-<li><a href="pages/actualite.html">Actualités</a></li>
-<li><a href="pages/projets.html">Projets</a></li>
-<li><a href="pages/documents.html">La station G</a></li>
-<li><a href="pages/soutien.html">Comité de soutien</a></li>
+<li><a href="pages/informations.html">Mentions légales</a></li>
+<li><a href="pages/informations.html">Politique de confidentialité</a></li>
+<li><a href="pages/informations.html">CGU</a></li>
+<li><a href="pages/informations.html">informations légales</a></li>
 </ul>
 </div>
 
 <!-- Fond flouté -->
 <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
-<!-- Menu burger -->
-<div class="burger" onclick="toggleMenu()">☰</div>
-
-<!-- Menu latéral -->
-<div class="side-menu" id="sideMenu">
-<ul>
-<li><a href="#">Mentions légales</a></li>
-<li><a href="#">Politique de confidentialité</a></li>
-<li><a href="#">CGU</a></li>
-<li><a href="pages/informations.html">Informations légales</a></li>
-</ul>
-</div>
-
-<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
 <!-- Navigation principale -->
 <header>
-<div class="logo">
-<a href="index.html">UNSPG</a>
-</div>
+<div class="top-bar">
+<img src="images/logo.jpg" alt="Logo UNSPG" class="logo" />
+<div class="burger" onclick="toggleMenu()">☰</div>
 <nav>
 <ul class="nav-links">
 <li><a href="pages/equipe.html">Biographie</a></li>
 <li><a href="pages/actualite.html">Actualités</a></li>
 <li><a href="pages/projets.html">Projets</a></li>
 <li><a href="pages/Station G.html">La station G</a></li>
-<li><a href="pages/Nos élues.html">Nos élues</a></li>
+<li><a href="pages/nos-elues.html">Nos élues</a></li>
 <li><a href="pages/soutien.html">Comité de soutien</a></li>
 </ul>
 </nav>
+</div>
 </header>
 
 <section class="hero-banner">
@@ -157,8 +142,19 @@
 </section>
 
 <section class="intro-zone">
-<h2>Pourquoi ce site ?</h2>
-<p>Ce site vous permet de suivre l’engagement de Cédric Sabouret et de son équipe, leurs actions pour Gonesse, et de découvrir les projets à venir.</p>
+
+<h1>Bienvenue sur le site officiel de Cédric Sabouret et l’équipe « Un nouveau souffle pour Gonesse ».</h1><br>
+<h3>
+
+Constituée avant les élections municipales de 2020, notre équipe s’était présentée lors<br> de ce dernier scrutin et avait obtenu 49,7 % des voix.
+
+Avec nos 7 élus<br> au Conseil municipal de Gonesse (sur 35), nous sommes depuis 2020 <br> une opposition municipale qui ne reste pas passive : nous faisons <br>entendre notre voix pour critiquer parfois, mais surtout pour proposer <br> et faire avancer Gonesse.
+
+Nos objectifs sont simples : améliorer la qualité de vie, <br>renforcer la solidarité  et la proximité et préparer l’avenir en n’oubliant aucun quartier,<br> aucune génération.
+
+En vue du prochain scrutin qui aura lieu en mars 2026, nous souhaitons <br> associer les Gonessiens à la construction d’un projet ambitieux réaliste pour notre ville.
+
+</h3>
 </section>
 
 <section class="slider-zone">
@@ -166,51 +162,65 @@
 <div class="slider" id="main-slider">
 <!-- Slide 1 -->
 <div class="slide active">
-<img src="images/cedric1.jpg" alt="Inauguration de l’hôpital">
+<img src="images/eluanna.jpg" alt="Inauguration de l’hôpital">
 <div class="caption">
-<h2>Inauguration de l’hôpital</h2>
-<a href="pages/projets.html" class="button">Voir l’article</a>
+<h2>PEQUIGNOT Anna</h2>
 </div>
 </div>
 
 <!-- Slide 2 -->
 <div class="slide">
-<img src="images/cedric3.jpg" alt="Réunion avec les jeunes">
+<img src="images/elucecile.jpg" alt="Réunion avec les jeunes">
 <div class="caption">
-<h2>Réunion avec les jeunes</h2>
-<a href="pages/projets.html" class="button">Voir l’article</a>
+<h2>PARSEIHIAN Cecile</h2>
+</div>
+</div>
+
+<div class="slide">
+<img src="images/elunayat.jpg" alt="Réunion avec les jeunes">
+<div class="caption">
+<h2>KIR Nayat</h2>
+</div>
+</div>
+
+<div class="slide">
+<img src="images/elusamatjean.jpg" alt="Réunion avec les jeunes">
+<div class="caption">
+<h2>SAMAT Jean</h2>
 </div>
 </div>
 
 <!-- Slide 3 -->
 <div class="slide">
-<img src="images/cedric12_HD.jpg" alt="Rencontre avec les jeunes">
+<img src="images/elunathalie.jpg" alt="Rencontre avec les jeunes">
 <div class="caption">
-<h2>Rencontre avec les jeunes</h2>
-<a href="pages/projets.html" class="button">Voir l’article</a>
+<h2>MORATILLE Nathalie</h2>
 </div>
 </div>
 </div>
 </div>
 
 <div class="slider-right">
-<!-- vide pour l’instant -->
+<div class="intro-elues"
+<h1 class="intro-elues-titre">Nos élues</h1>
+<p>
+Les élues de notre groupe jouent un rôle fondamental dans la vie démocratique de notre ville. Présentes sur le terrain, à l’écoute des habitantes et des habitants, ils portent nos engagements avec conviction et détermination. Leur implication au quotidien contribue à défendre les valeurs qui nous rassemblent : la solidarité, la justice sociale, l’égalité et l’écologie. Grâce à leur travail, leur proximité et leur sens du collectif, ils sont un véritable pilier de notre action municipale. Nous sommes fiers de leur engagement.
+</p>
+<a href="pages/élues.html" class="btn-elues">Découvrir nos élues</a>
+</div>
 </div>
 </section>
-
 
 <!-- 4 blocs d’actu -->
 <section class="actualites-section">
 <div class="actualites-titre">
-<h2>Nos actualités</h2>
-<a href="pages/actualite.html" class="voir-toutes">Voir toutes nos actualités</a>
 </div>
 
 <div class="actualite-principale">
 <img src="images/cedric1.jpg" alt="Inauguration de l’hôpital">
 <div class="actu-texte">
-<h3>Inauguration de l’hôpital</h3>
-<p>Un nouveau centre de santé pour tous a été inauguré à Gonesse.</p>
+<h1>Actualité</h1><br>
+<h4>Résumé plutot long de l'actu?</h4><br>
 <a href="pages/actualite.html">Voir l'actu</a>
 </div>
 </div>
@@ -219,24 +229,24 @@
 <div class="actu-secondaire">
 <img src="images/travaux.jpg" alt="Travaux à Gonesse">
 <div class="actu-texte">
-<h4>Trop de travaux</h4>
-<p>Les habitants s’interrogent sur la coordination des chantiers.</p>
+<h1>Trop de travaux?</h1>
+<h3>Les habitants s’interrogent sur la coordination des chantiers.</h3>
 <a href="pages/actualite.html">Voir l'actu</a>
 </div>
 </div>
 <div class="actu-secondaire">
 <img src="images/legonessien.jpg" alt="Le Gonessien">
 <div class="actu-texte">
-<h4>Le Gonessien, outil d’information ou de communication ?</h4>
-<p>Focus sur la ligne éditoriale du journal municipal.</p>
+<h1>Le Gonessien, outil d’information ou de communication ?</h1>
+<h3>Focus sur la ligne éditoriale du journal municipal.</h3>
 <a href="pages/actualite.html">Voir l'actu</a>
 </div>
 </div>
 <div class="actu-secondaire">
 <img src="images/zonebleu.jpg" alt="Zone Bleue à Gonesse">
 <div class="actu-texte">
-<h4>Zone Bleue à Gonesse</h4>
-<p>Donnez votre avis sur les nouvelles zones de stationnement.</p>
+<h1>Zone Bleue à Gonesse</h1>
+<h3>Donnez votre avis sur les nouvelles zones de stationnement.</h3>
 <a href="pages/actualite.html">Voir l'actu</a>
 </div>
 </div>

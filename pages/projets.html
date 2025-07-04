@@ -1,33 +1,183 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Projets – UNSPG</title>
-<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+<style>
+body {
+margin: 0;
+font-family: 'Lato', sans-serif;
+background: linear-gradient(135deg, #eaf2ff, #d1e0f0);
+background-attachment: fixed;
+background-size: cover;
+color: #1f355c;
+}
+
+.projets-section {
+padding: 80px 20px;
+}
+
+.projets-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+gap: 40px;
+align-items: flex-start;
+flex-wrap: wrap;
+background: white;
+border-radius: 12px;
+padding: 40px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.projets-text {
+flex: 2;
+min-width: 300px;
+}
+
+.projets-text h1 {
+font-size: 32px;
+margin-bottom: 20px;
+border-bottom: 2px solid #3c6ea5;
+padding-bottom: 10px;
+}
+
+.projets-text h3 {
+margin-top: 30px;
+font-size: 24px;
+color: #2a4a7f;
+}
+
+.projets-text h4 {
+margin-top: 20px;
+font-size: 20px;
+font-weight: bold;
+color: #1f355c;
+}
+
+.projets-text p,
+.projets-text ul {
+font-size: 17px;
+line-height: 1.7;
+margin-bottom: 20px;
+}
+
+.projets-text ul {
+padding-left: 20px;
+}
+
+.projets-image {
+flex: 1;
+min-width: 250px;
+}
+
+.projets-image img {
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+object-fit: cover;
+}
+
+header,
+nav,
+footer {
+background-color: #1f355c;
+padding: 15px 30px;
+color: white;
+}
+
+nav ul {
+display: flex;
+gap: 20px;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+nav a {
+text-decoration: none;
+color: white;
+font-weight: 500;
+}
+
+footer {
+text-align: center;
+font-size: 14px;
+}
+</style>
 </head>
-<body>
-<header>
-    <div class="logo">
-    <a href="../index.html">UNSPG</a>
-    </div>
-<nav>
+<body class="equipe-page">
+
+<!-- Menu latéral -->
+<div class="side-menu" id="sideMenu">
 <ul>
-<li><a href="equipe.html">L’équipe</a></li>
-<li><a href="actualite.html">Actualité</a></li>
+<li><a href="informations.html">Mentions légales</a></li>
+<li><a href="informations.html">Politique de confidentialité</a></li>
+<li><a href="informations.html">CGU</a></li>
+<li><a href="informations.html">Informations légales</a></li>
+</ul>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- BANNIÈRE COMMUNE -->
+<header>
+<div class="logo">
+<a href="../index.html">
+<img src="../images/Logo UNSPG l'opposition.png" alt="Logo UNSPG"/>
+</a>
+</div>
+<ul class="nav-links">
+<li><a href="equipe.html">Biographie</a></li>
+<li><a href="actualite.html">Actualités</a></li>
 <li><a href="projets.html">Projets</a></li>
-<li><a href="documents.html">Documents</a></li>
+<li><a href="Station G.html">La station G</a></li>
+<li><a href="nos-elues.html">Nos élues</a></li>
 <li><a href="soutien.html">Comité de soutien</a></li>
 </ul>
-</nav>
+<div class="burger" onclick="toggleMenu()">☰</div>
 </header>
 
-<main>
-<h1>Nos projets</h1>
-<p>Page en construction.</p>
-</main>
+<!-- SECTION PROJETS -->
+<section class="projets-section">
+<div class="projets-container">
+<div class="projets-text">
+<h1>Un projet municipal en construction</h1>
+<p>Dans la perspective des élections municipales de 2026, nous avons lancé des travaux pour préparer un programme municipal ambitieux et réaliste pour Gonesse et les Gonessiens.</p>
+
+<h3>Plusieurs axes ont déjà été mis en avant :</h3>
+
+<h4>La proximité et l’écoute</h4>
+<p>Le maire de Gonesse est en place depuis 30 ans (1<sup>ère</sup> élection en 1995). Petit à petit, et c’est logique, la gestion municipale s’est éloignée des habitants. Les réunions de quartier sont plus des conférences que des temps d’échange. Les propositions alternatives sont souvent rejetées avant même d’avoir été examinées. Bref, il est temps de revenir à un fonctionnement plus participatif, qui place les habitants au cœur du projet municipal.</p>
+
+<h4>L’amélioration de la vie quotidienne comme boussole de l’action municipale</h4>
+<p>La communication municipale est centrée sur les grands projets : triangle de Gonesse, métro, friche de l’hôpital. Mais ce qui compte c’est aussi et surtout les petits soucis du quotidien : travaux mal réalisés, dépôts sauvages, problèmes de circulation et de stationnement, sécurité. Notre programme municipal doit être résolument tourné vers le quotidien.</p>
+
+<h3>Plusieurs projets structurants ont aussi été annoncés :</h3>
+<ul>
+<li>Réaliser un tiers-lieu ouvert aux étudiants, aux porteurs de projets et aux associations sur l’ancien site du Gescia, en partenariat avec la communauté d’agglomération.</li>
+<li>Relancer le projet de complexe de loisirs bowling-karting.</li>
+<li>Construire une nouvelle salle des fêtes sur un site proche, plutôt que de fermer la salle Jacques Brel. Ne reproduisons pas l’erreur de la fermeture de la piscine pendant des années.</li>
+<li>Réaménager le carrefour Jean-Jaurès en réalisant un rond-point avec logements et commerces pour changer l’image de Gonesse et rendre la commune plus attractive.</li>
+<li>Lancer un véritable plan de rénovation dans le quartier de la Fauconnière qui a été négligé pendant trop longtemps.</li>
+</ul>
+
+<p>Le projet doit être perfectionné, affiné, afin de dresser des perspectives pour la période 2026-2032.</p>
+</div>
+
+<div class="projets-image">
+<img src="../images/projets.jpg - Raccourci.lnk" alt="Illustration projet municipal" />
+</div>
+</div>
+</section>
 
 <footer>
 <p>© 2025 Un Nouveau Souffle pour Gonesse – Tous droits réservés</p>
 </footer>
+
+<script src="../js/script.js"></script>
 </body>
 </html>

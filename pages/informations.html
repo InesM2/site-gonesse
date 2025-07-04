@@ -1,28 +1,85 @@
 <!DOCTYPE html>
+
 <html lang="fr">
+
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<title>Mentions & Informations – UNSPG</title>
-<link rel="stylesheet" href="../style.css">
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <title>Mentions & Informations – UNSPG</title>
+
 </head>
-<body>
 
-<header>
-<div class="logo"><a href="../index.html">UNSPG</a></div>
-</header>
 
-<div class="legal-page">
-<aside class="sidebar">
-<ul>
-<li><a href="#mentions">Mentions légales</a></li>
-<li><a href="#confidentialite">Confidentialité</a></li>
-<li><a href="#cgu">CGU</a></li>
-<li><a href="#cookies">Cookies</a></li>
-</ul>
-</aside>
 
-<main class="legal-content">
+<body class="informations">
+
+
+
+  <!-- Header commun -->
+
+  <header>
+
+    <div class="logo">
+
+      <a href="../index.html"><img src="../images/logo.jpg" alt="Logo UNSPG"></a>
+
+    </div>
+
+    <ul class="nav-links">
+
+      <li><a href="equipe.html">Biographie</a></li>
+
+      <li><a href="actualite.html">Actualités</a></li>
+
+      <li><a href="projets.html">Projets</a></li>
+
+      <li><a href="Station G.html">La station G</a></li>
+
+      <li><a href="nos-elues.html">Nos élues</a></li>
+
+      <li><a href="soutien.html">Comité de soutien</a></li>
+
+    </ul>
+
+    <div class="burger" onclick="toggleMenu()">☰</div>
+
+  </header>
+
+<div style="margin-top: 140px;"></div>
+
+  <!-- Menu latéral -->
+
+  <div class="side-menu" id="sideMenu">
+
+    <ul>
+
+      <li><a href="informations.html#mentions">Mentions légales</a></li>
+
+      <li><a href="informations.html#confidentialite">Politique de confidentialité</a></li>
+
+      <li><a href="informations.html#cgu">CGU</a></li>
+
+      <li><a href="informations.html#cookies">Cookies</a></li>
+
+    </ul>
+
+  </div>
+
+
+
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+
+  <!-- Contenu -->
+
+  <main class="legal-content">
 <section id="mentions">
 <h2>Mentions légales:</h2><br>
 <p>Éditeur du site : Cédric Sabouret<br>
@@ -134,5 +191,6 @@ Vous pouvez accepter, refuser ou personnaliser vos choix.</p>
 </main>
 </div>
 
+<script src="../js/script.js"></script>
 </body>
 </html>

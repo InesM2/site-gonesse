@@ -1,14 +1,26 @@
 // MENU BURGER
 function toggleMenu() {
-const sideMenu = document.getElementById('sideMenu');
-if (sideMenu.style.left === '0px') {
-sideMenu.style.left = '-250px';
-overlay.style.display = 'none';
+const sideMenu = document.getElementById("sideMenu");
+const overlay = document.getElementById("overlay");
+
+if (sideMenu.style.left === "0px") {
+sideMenu.style.left = "-250px";
+overlay.style.display = "none";
 } else {
-sideMenu.style.left = '0px';
-overlay.style.display = 'block';
+sideMenu.style.left = "0px";
+overlay.style.display = "block";
 }
 }
+document.getElementById("overlay").addEventListener("click", function () {
+
+  const sideMenu = document.getElementById("sideMenu");
+
+  this.style.display = "none";
+
+  sideMenu.style.left = "-250px";
+
+  });
+
 
 // SLIDER AUTOMATIQUE
 let currentSlide = 0;
@@ -28,8 +40,10 @@ currentSlide = (currentSlide + 1) % slides.length;
 showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 4000); // Change toutes les 4 sec
+// Lance le slider toutes les x  secondes
+setInterval(nextSlide, 7000);
 
+// FORMULAIRE DE SOUTIEN (popup + vérification des emails)
 document.addEventListener("DOMContentLoaded", function () {
 const form = document.getElementById("form-soutien");
 const popup = document.getElementById("popup");
@@ -56,4 +70,11 @@ if (closeBtn) {
 closeBtn.addEventListener("click", function () {
 popup.style.display = "none";
 });
+}
+});
+
+function toggleTexte(button) {
+const texte = button.previousElementSibling;
+texte.classList.toggle("afficher");
+button.textContent = texte.classList.contains("afficher") ? "Réduire" : "Lire la suite";
 }

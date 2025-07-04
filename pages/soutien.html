@@ -2,63 +2,83 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>L’équipe – UNSPG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comité de soutien – UNSPG</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-<header>
-    <div class="logo">
-    <a href="../index.html">UNSPG</a>
-    </div>
-<nav>
+<body class="soutien-page">
+
+<!-- Menu latéral -->
+<div class="side-menu" id="sideMenu">
 <ul>
-<li><a href="equipe.html">L’équipe</a></li>
-<li><a href="actualite.html">Actualité</a></li>
+<li><a href="informations.html">Mentions légales</a></li>
+<li><a href="informations.html">Politique de confidentialité</a></li>
+<li><a href="informations.html">CGU</a></li>
+<li><a href="informations.html">Informations légales</a></li>
+</ul>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- BANNIÈRE -->
+<header>
+<div class="logo">
+<a href="../index.html"><img src="../images/logo.jpg" alt="Logo UNSPG"/></a>
+</div>
+<ul class="nav-links">
+<li><a href="equipe.html">Biographie</a></li>
+<li><a href="actualite.html">Actualités</a></li>
 <li><a href="projets.html">Projets</a></li>
-<li><a href="documents.html">Documents</a></li>
+<li><a href="Station G.html">La station G</a></li>
+<li><a href="nos-elues.html">Nos élues</a></li>
 <li><a href="soutien.html">Comité de soutien</a></li>
 </ul>
-</nav>
+<div class="burger" onclick="toggleMenu()">☰</div>
 </header>
 
-<main>
-<h2>Rejoindre le comité de soutien.</h2>
-<div class="soutien-container">
-<form id="soutien-form" class="formulaire-soutien">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required>
-
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom" required>
-
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="emailConfirm">Confirmer l'Email* :</label>
-    <input type="email" id="emailConfirm" name="emailConfirm" required>
-
-    <label for="telephone">Téléphone :</label>
-    <input type="tel" id="telephone" name="telephone" required>
-
-    <label for="adresse">Adresse :</label>
-    <input type="text" id="adresse" name="adresse" required>
-
-    <button type="submit">Rejoindre le comité</button>
-  </form>
+<!-- TEXTE D'INTRO -->
+<section class="intro-soutien">
+<div class="intro-container">
+<h1>Rejoignez notre comité de soutien</h1>
+<p>
+Le comité de soutien rassemble les citoyen·nes qui souhaitent apporter leur aide à notre projet pour Gonesse.
+Vous pouvez participer activement à la campagne, distribuer des tracts, parler autour de vous, nous aider à organiser des événements
+ou simplement nous faire savoir que vous soutenez notre démarche. Chaque voix, chaque présence compte !
+</p>
+<p>
+En vous inscrivant, vous recevrez nos actualités et serez tenu·e informé·e des prochaines actions à mener ensemble.
+</p>
 </div>
-</main>
+</section>
 
-  <div id="popup" class="popup">
-    <p>Félicitations ! Vous avez rejoint le comité de soutien.<br>
-    Un Nouveau Souffle pour Gonesse vous recontactera. Merci !</p>
-    <button onclick="closePopup()">Fermer</button>
-    </div>
-</main>
+<!-- FORMULAIRE -->
+<section class="form-soutien">
+<form class="soutien-form">
+<label for="prenom">Prénom *</label>
+<input type="text" id="prenom" name="prenom" required>
 
-<script src="../js/script.js"></script>
+<label for="email">Email *</label>
+<input type="email" id="email" name="email" required>
 
+<label for="confirm-email">Confirmer l’email *</label>
+<input type="email" id="confirm-email" name="confirm-email" required>
+
+<label for="telephone">Téléphone</label>
+<input type="tel" id="telephone" name="telephone">
+
+<label for="adresse">Adresse (ville / quartier)</label>
+<input type="text" id="adresse" name="adresse">
+
+<button type="submit">Rejoindre le comité</button>
+</form>
+</section>
+
+<!-- FOOTER -->
 <footer>
 <p>© 2025 Un Nouveau Souffle pour Gonesse – Tous droits réservés</p>
 </footer>
+
+<script src="../js/script.js"></script>
 </body>
 </html>
